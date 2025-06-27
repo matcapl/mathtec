@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathtec - Master Funnel Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <div class="brand">
+                <h1 class="brand-title">MATHTEC</h1>
+                <span class="brand-subtitle">Intelligence Platform</span>
+            </div>
+            
+            <div class="header-metrics">
+                <div class="metric-card">
+                    <span class="metric-label">Portfolio Companies</span>
+                    <span class="metric-value">45</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-label">Total AUM</span>
+                    <span class="metric-value">$1.2B</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-label">YTD Deals</span>
+                    <span class="metric-value">12</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-label">Team Size</span>
+                    <span class="metric-value">85</span>
+                </div>
+            </div>
+            
+            <div class="header-time">
+                <div class="live-clock" id="liveClock"></div>
+                <div class="last-updated">Last updated: <span id="lastUpdated"></span></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Dashboard -->
+    <main class="dashboard">
+        <div class="dashboard-container">
+            <!-- Central Master Funnel -->
+            <section class="master-funnel-section">
+                <h2 class="section-title">Master Business Funnel</h2>
+                <div class="master-funnel" id="masterFunnel">
+                    <div class="funnel-stage" data-funnel="origination">
+                        <div class="funnel-segment origination">
+                            <h3>Origination</h3>
+                            <div class="funnel-metrics">
+                                <span class="volume">2,500</span>
+                                <span class="conversion">→ 0.48%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="funnel-stage" data-funnel="talent">
+                        <div class="funnel-segment talent">
+                            <h3>Talent</h3>
+                            <div class="funnel-metrics">
+                                <span class="volume">1,000</span>
+                                <span class="conversion">→ 1.8%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="funnel-stage" data-funnel="game_selection">
+                        <div class="funnel-segment game-selection">
+                            <h3>Game Selection</h3>
+                            <div class="funnel-metrics">
+                                <span class="volume">500</span>
+                                <span class="conversion">→ 1.6%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="funnel-stage" data-funnel="competitive_intelligence">
+                        <div class="funnel-segment competitive">
+                            <h3>Competitive Intelligence</h3>
+                            <div class="funnel-metrics">
+                                <span class="volume">10,000</span>
+                                <span class="conversion">→ 1.2%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="funnel-stage" data-funnel="sales">
+                        <div class="funnel-segment sales">
+                            <h3>Sales</h3>
+                            <div class="funnel-metrics">
+                                <span class="volume">800</span>
+                                <span class="conversion">→ 3.125%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="funnel-stage" data-funnel="operational_improvements">
+                        <div class="funnel-segment operational">
+                            <h3>Operational</h3>
+                            <div class="funnel-metrics">
+                                <span class="volume">200</span>
+                                <span class="conversion">→ 7.5%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Detailed Funnel View -->
+            <section class="detailed-funnel-section">
+                <div class="section-header">
+                    <h2 class="section-title" id="detailedTitle">Select a funnel to view details</h2>
+                    <div class="view-controls">
+                        <button class="btn btn--sm" id="volumeView">Volume</button>
+                        <button class="btn btn--sm btn--secondary" id="percentView">Percentage</button>
+                    </div>
+                </div>
+                
+                <div class="detailed-content" id="detailedContent">
+                    <div class="funnel-chart-container">
+                        <canvas id="detailedChart" width="800" height="400"></canvas>
+                    </div>
+                    
+                    <div class="kpi-grid" id="kpiGrid">
+                        <!-- KPI cards will be populated dynamically -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Performance Overview -->
+            <section class="performance-overview">
+                <h2 class="section-title">Performance Overview</h2>
+                <div class="performance-grid">
+                    <div class="performance-card">
+                        <h3>AI Automation Rate</h3>
+                        <div class="performance-value success">65%</div>
+                        <div class="performance-trend">↑ 12%</div>
+                    </div>
+                    <div class="performance-card">
+                        <h3>Platform Utilization</h3>
+                        <div class="performance-value success">92%</div>
+                        <div class="performance-trend">↑ 8%</div>
+                    </div>
+                    <div class="performance-card">
+                        <h3>Customer Satisfaction</h3>
+                        <div class="performance-value success">4.6/5</div>
+                        <div class="performance-trend">↑ 0.3</div>
+                    </div>
+                    <div class="performance-card">
+                        <h3>Revenue Growth</h3>
+                        <div class="performance-value success">35%</div>
+                        <div class="performance-trend">↑ 15%</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-nav">
+                <button class="btn btn--outline btn--sm">Export Data</button>
+                <button class="btn btn--outline btn--sm">Settings</button>
+                <button class="btn btn--primary btn--sm" id="refreshData">Refresh</button>
+            </div>
+            <div class="footer-info">
+                <span>© 2025 Mathtec Intelligence Platform</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

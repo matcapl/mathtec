@@ -1,0 +1,231 @@
+{
+  "funnels": {
+    "origination_funnel": {
+      "stages": [
+        "Market Research",
+        "Target Identification",
+        "Initial Contact",
+        "Qualified Lead",
+        "LOI Signed",
+        "DD Started",
+        "Deal Closed"
+      ],
+      "metrics": [
+        2500,
+        1000,
+        400,
+        150,
+        75,
+        35,
+        12
+      ],
+      "conversion_rates": [
+        100,
+        40,
+        16,
+        6,
+        3,
+        1.4,
+        0.48
+      ],
+      "kpis": {
+        "total_pipeline_value": "$2.5B",
+        "avg_deal_size": "$50M",
+        "time_to_close": "6.2 months",
+        "cost_per_lead": "$15K",
+        "win_rate": "12%"
+      }
+    },
+    "talent_funnel": {
+      "stages": [
+        "Job Posting",
+        "Applications",
+        "Screening",
+        "Interviews",
+        "Offers",
+        "Acceptances",
+        "Successful Hires"
+      ],
+      "metrics": [
+        1000,
+        500,
+        200,
+        80,
+        25,
+        20,
+        18
+      ],
+      "conversion_rates": [
+        100,
+        50,
+        20,
+        8,
+        2.5,
+        2.0,
+        1.8
+      ],
+      "kpis": {
+        "time_to_hire": "45 days",
+        "cost_per_hire": "$25K",
+        "offer_acceptance_rate": "80%",
+        "quality_of_hire": "4.2/5",
+        "first_year_retention": "85%"
+      }
+    },
+    "game_selection_funnel": {
+      "stages": [
+        "Market Analysis",
+        "Sector Research",
+        "Company Discovery",
+        "Initial Screening",
+        "Deep Dive",
+        "Investment Thesis",
+        "Go/No-Go Decision"
+      ],
+      "metrics": [
+        500,
+        300,
+        150,
+        75,
+        30,
+        15,
+        8
+      ],
+      "conversion_rates": [
+        100,
+        60,
+        30,
+        15,
+        6,
+        3,
+        1.6
+      ],
+      "kpis": {
+        "research_depth_score": "8.5/10",
+        "time_to_decision": "4.2 weeks",
+        "false_positive_rate": "5%",
+        "market_coverage": "95%",
+        "thesis_accuracy": "78%"
+      }
+    },
+    "competitive_intelligence_funnel": {
+      "stages": [
+        "Data Collection",
+        "Information Processing",
+        "Analysis",
+        "Insights Generation",
+        "Actionable Intelligence",
+        "Strategic Recommendations",
+        "Implementation"
+      ],
+      "metrics": [
+        10000,
+        5000,
+        2000,
+        800,
+        400,
+        200,
+        120
+      ],
+      "conversion_rates": [
+        100,
+        50,
+        20,
+        8,
+        4,
+        2,
+        1.2
+      ],
+      "kpis": {
+        "data_sources": "250+",
+        "intelligence_accuracy": "87%",
+        "time_to_insight": "24 hours",
+        "competitive_advantage": "15%",
+        "roi_on_intelligence": "4.2x"
+      }
+    },
+    "sales_funnel": {
+      "stages": [
+        "Marketing Qualified Leads",
+        "Sales Qualified Leads",
+        "Demos",
+        "Proposals",
+        "Negotiations",
+        "Contracts",
+        "Closed Won"
+      ],
+      "metrics": [
+        800,
+        400,
+        200,
+        100,
+        50,
+        30,
+        25
+      ],
+      "conversion_rates": [
+        100,
+        50,
+        25,
+        12.5,
+        6.25,
+        3.75,
+        3.125
+      ],
+      "kpis": {
+        "avg_deal_value": "$150K",
+        "sales_cycle_length": "3.5 months",
+        "win_rate": "25%",
+        "customer_ltv": "$500K",
+        "churn_rate": "8%"
+      }
+    },
+    "operational_improvements_funnel": {
+      "stages": [
+        "Opportunity Identification",
+        "Impact Assessment",
+        "Feasibility Study",
+        "Implementation Plan",
+        "Pilot Program",
+        "Full Rollout",
+        "Results Validation"
+      ],
+      "metrics": [
+        200,
+        120,
+        80,
+        50,
+        30,
+        20,
+        15
+      ],
+      "conversion_rates": [
+        100,
+        60,
+        40,
+        25,
+        15,
+        10,
+        7.5
+      ],
+      "kpis": {
+        "avg_cost_savings": "$2.5M",
+        "implementation_success": "75%",
+        "time_to_value": "4.5 months",
+        "roi_on_improvements": "6.8x",
+        "employee_satisfaction": "4.1/5"
+      }
+    }
+  },
+  "overall_metrics": {
+    "portfolio_companies": 45,
+    "total_aum": "$1.2B",
+    "deals_closed_ytd": 12,
+    "team_size": 85,
+    "ai_automation_rate": "65%",
+    "platform_utilization": "92%",
+    "customer_satisfaction": "4.6/5",
+    "revenue_growth": "35%"
+  },
+  "last_updated": "2025-06-27T16:19:00Z"
+}
